@@ -1,7 +1,7 @@
 spec:
-  name: hi.event
+  name: hi-events
   services:
-    - name: hi.events
+    - name: hi-events
       dockerfile_path: Dockerfile
       git:
         repo_clone_url: https://github.com/HiEventsDev/hi.events-digitalocean.git
@@ -11,6 +11,6 @@ spec:
           scope: RUN_TIME
         - key: DATABASE_URL
           scope: RUN_TIME
-          value: ${hievents-db.DATABASE_URL}
+          value: ${hi-events-db.DATABASE_URL}
   databases:
-    - name: hievents-db
+    - name: hi-events-db
