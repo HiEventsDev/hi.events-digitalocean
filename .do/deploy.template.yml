@@ -5,7 +5,7 @@ spec:
       dockerfile_path: Dockerfile
       git:
         repo_clone_url: https://github.com/HiEventsDev/hi.events-digitalocean.git
-        branch: master
+        branch: main
       envs:
         - key: APP_KEY
           scope: RUN_TIME
