@@ -20,6 +20,6 @@ spec:
           value: ${APP_URL}/api
         - key: VITE_API_URL_SERVER
           scope: RUN_AND_BUILD_TIME
-          value: http://localhost:8080/api
+          value: http://localhost:80/api
   databases:
     - name: hi-events-db
