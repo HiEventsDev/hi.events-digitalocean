@@ -15,5 +15,11 @@ spec:
         - key: APP_FRONTEND_URL
           scope: RUN_AND_BUILD_TIME
           value: ${APP_URL}
+        - key: VITE_API_URL_CLIENT
+          scope: RUN_AND_BUILD_TIME
+          value: ${APP_URL}/api
+        - key: VITE_API_SERVER_CLIENT
+          scope: RUN_AND_BUILD_TIME
+          value: http://localhost:8080/api
   databases:
     - name: hi-events-db
