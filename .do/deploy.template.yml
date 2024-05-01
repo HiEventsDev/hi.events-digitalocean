@@ -21,5 +21,9 @@ spec:
         - key: VITE_API_URL_SERVER
           scope: RUN_AND_BUILD_TIME
           value: http://localhost:80/api
+        - key: VITE_STRIPE_PUBLISHABLE_KEY
+          scope: RUN_AND_BUILD_TIME
+          value: pk_test
+
   databases:
     - name: hi-events-db
