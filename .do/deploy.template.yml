@@ -27,6 +27,15 @@ spec:
         - key: VITE_STRIPE_PUBLISHABLE_KEY
           scope: RUN_AND_BUILD_TIME
           value: pk_test
+        - key: LOG_CHANNEL
+          scope: RUN_TIME
+          value: stderr
+        - key: QUEUE_CONNECTION
+          scope: RUN_TIME
+          value: sync
+        - key: MAIL_MAILER
+          scope: RUN_TIME
+          value: array
 
   databases:
     - name: hi-events-db
