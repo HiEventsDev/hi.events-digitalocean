@@ -10,6 +10,8 @@ spec:
       envs:
         - key: APP_KEY
           scope: RUN_TIME
+        - key: JWT_SECRET
+          scope: RUN_TIME
         - key: DATABASE_URL
           scope: RUN_TIME
           value: ${hi-events-db.DATABASE_URL}
