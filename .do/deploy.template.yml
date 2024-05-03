@@ -3,6 +3,7 @@ spec:
   services:
     - name: hi-events
       dockerfile_path: Dockerfile
+      http_port: 80
       git:
         repo_clone_url: https://github.com/HiEventsDev/hi.events-digitalocean.git
         branch: main
