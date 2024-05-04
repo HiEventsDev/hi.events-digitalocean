@@ -35,7 +35,15 @@ spec:
           value: sync
         - key: MAIL_MAILER
           scope: RUN_TIME
-          value: array
-
+          value: log
+        - key: APP_CDN_URL
+          scope: RUN_TIME
+          value: ${APP_URL}/api/storage
+        - key: FILESYSTEM_PUBLIC_DISK
+          scope: RUN_TIME
+          value: public
+        - key: FILESYSTEM_PRIVATE_DISK
+          scope: RUN_TIME
+          value: local
   databases:
     - name: hi-events-db
