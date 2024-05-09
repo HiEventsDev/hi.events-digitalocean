@@ -38,7 +38,7 @@ spec:
           value: log
         - key: APP_CDN_URL
           scope: RUN_TIME
-          value: ${APP_URL}/api/storage
+          value: ${APP_URL}/storage
         - key: FILESYSTEM_PUBLIC_DISK
           scope: RUN_TIME
           value: public
