@@ -1,6 +1,6 @@
 # Hi.Events DigitalOcean
 
-Deploy Hi.Events with one click on DigitalOcean.
+Deploy [Hi.Events](https://github.com/HiEventsDev/hi.events) with one click on DigitalOcean.
 
 [![Deploy on DigitalOcean](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/HiEventsDev/hi.events-digitalocean/tree/main&ref=fe6200c866f8)
 
