@@ -45,5 +45,8 @@ spec:
         - key: FILESYSTEM_PRIVATE_DISK
           scope: RUN_TIME
           value: local
+        - key: APP_SAAS_MODE_ENABLED
+          scope: RUN_TIME
+          value: 'false'
   databases:
     - name: hi-events-db
