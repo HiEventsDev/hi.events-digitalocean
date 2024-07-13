@@ -32,8 +32,8 @@ To make the app production-ready:
 - Set up Stripe via environment variables.
 - It is advisable to set up Amazon S3 for storage, as images will be lost every time you upgrade otherwise.
 
-Detailed setup instructions are available [here](http://localhost:3002/docs/getting-started/deploying).
+Detailed setup instructions are available [here](https://hi.events/docs/getting-started/deploying).
 
 ## 📜 Licensing
 
-This project is licensed under the terms specified [here](http://localhost:3002/licensing). For more information, please refer to the licensing documentation.
+This project is licensed under the terms specified [here](https://hi.events/licensing). For more information, please refer to the licensing documentation.
