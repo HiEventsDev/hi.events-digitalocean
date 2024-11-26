@@ -31,6 +31,7 @@ To make the app production-ready:
 - Configure a mail service via environment variables.
 - Set up Stripe via environment variables.
 - It is advisable to set up Amazon S3 for storage, as images will be lost every time you upgrade otherwise.
+- It is advisable to [configure up a queue](https://hi.events/docs/getting-started/deploying#queue-configuration) to hanlde background tasks.
 
 Detailed setup instructions are available [here](https://hi.events/docs/getting-started/deploying).
 
