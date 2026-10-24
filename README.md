@@ -19,6 +19,19 @@ Deploy [Hi.Events](https://github.com/HiEventsDev/hi.events) with one click on D
 
 ## 🔄 How to Update
 
+The `Dockerfile` in this repository pins a specific Hi.Events version, and we move it forward when a new version is released. Rebuilding your app installs the version pinned here.
+
+Before you update:
+
+- **Back up your database.** Updates run database migrations, and some can't be undone. Export it with `pg_dump`, using the connection string from your app's database settings:
+  ```bash
+  pg_dump "<connection string>" -F c -f hievents-backup.dump
+  ```
+- **Read the [release notes](https://github.com/HiEventsDev/Hi.Events/releases)** for every version between yours and the new one. Updating from v1.x to v2 changes how event dates are stored; see the [v2.0.0 release notes](https://github.com/HiEventsDev/Hi.Events/releases/tag/v2.0.0) first.
+- **Uploaded images are lost on every rebuild** unless you use S3 storage (see Production Setup below).
+
+Then:
+
 1. Open the DigitalOcean [dashboard](https://cloud.digitalocean.com/apps) and select the deployed hi.events instance.
 2. Click the **"Actions"** drop-down menu.
 3. Select **"Force Rebuild & Deploy"**.
